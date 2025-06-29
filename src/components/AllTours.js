@@ -38,7 +38,16 @@ function AllTours() {
             </main>
         ) 
     }
-
+    if (tours.length === 0) {
+        return (
+            <main>
+                <div className='title'>
+                    <h2>no more tours</h2>
+                    <button className='btn' onClick={() => fetchData()}>refresh</button>
+                </div>
+            </main>
+        )
+    }
     return (
         <main>
             <tourIdContext.Provider value={removeTour}>
