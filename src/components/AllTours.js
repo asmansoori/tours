@@ -42,7 +42,7 @@ function AllTours() {
         return (
             <main>
                 <div className='title'>
-                    <h2>no more tours</h2>
+                    <h2>no tours left</h2>
                     <button className='btn' onClick={() => fetchData()}>refresh</button>
                 </div>
             </main>
